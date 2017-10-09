@@ -1,3 +1,18 @@
+This fork only has two changes to allow installation onto Windows 10 Python 3.6.
+The dependency for pywin32 has been updated to pypiwin32 in two spots. This means pip can install pywin32 properly. Nothing else
+should be different between this version and the original news-please (at the time of the fork). 
+
+An error message was thrown during installation that asked for an updated Microsoft Visual C++ 14.0. Following the instruction and installing from the given URL worked.
+http://landinghub.visualstudio.com/visual-cpp-build-tools
+
+Installed on Windows 10 using the command:
+```
+python -m pip install git+https://github.com/feldhausenryan/news-please
+```
+
+
+
+
 # **news-please** #
  
 [![PyPI version](https://badge.fury.io/py/news-please.svg)](https://badge.fury.io/py/news-please)
